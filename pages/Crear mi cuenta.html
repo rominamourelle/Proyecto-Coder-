@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/style.css">
+   
+        <NAV class="topnav"> 
+                <a href="../Index.html">Inicio</a>   
+                <a href="./Mi Perfil.html">Mi Perfil</a>        
+                <a href="./chat.html">Chat</a>     
+                <a href="./Buscador de Artistas-Studios.html">Buscador de Artistas-Studios</a>
+        </NAV>
+</head>
+
+<body class="general">
+
+        <input type="image" placeholder="Foto del Perfil" id="foto" class="fotoperfil">               
+        <input type="tex" placeholder="Nombre Completo" required id="Nombre" class="nombre">  
+        <input type="email" placeholder="E-mail" required id="Email" class="email">   
+        <input type="number" placeholder="Celular/Telefono" id="Cel" class="cel">       
+        <input type="password" placeholder="Crear Contraseña" required id="contraseña" class="password"> 
+
+        
+    <div> class="artestudio">Soy Artista/Studio </div>
+        <input type="radio" name="Soy Artista/Studio" id="Si"> <label for="Si">Si</label> 
+        <input type="radio" name="Soy Artista/Studio" id="No"> <label for="No">No</label> 
+        <input type="text" placeholder="Nombre del Artista/Studio" required id="nombre artista" class="nombreartista"> 
+        <input type="url" placeholder="Pagina Web" id="web" class="web">
+        <Input type="text" placeholder="Localizacion" id="Localizacion" class="localizacion">
+        <Input type="text" placeholder="Estilo" id="Estilo" class="estilo">
+               <!--CREAR UNA LISTA DESPLEGABLE CON LOS ESTILOS POSIBLES EN LA PAGINA-->
+        <input type="submit" value="Enviar" class="submit">
+        <input type="reset" value="Reset" class="reset">
+        <input type="button" value="">     
+                     <!--FORM PARA CARGAR FOTOS-->
+        
+        <div>
+            
+        <form action="procesar_form.php" method="post"
+            enctype="text/plain"></form>
+        </div>
+                     <!--FORM PARA CARGAR LOS DATOS (INCLUIR  SOY ARTISTA)-->       
+    
+   <footer>
+         <a class="footer" href="./FAQ.html">FAQ</a>
+     </footer>
+    
+</body>
+
+</html>

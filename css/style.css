@@ -1,0 +1,525 @@
+.inicio {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 2rem;
+font-display: rgb(62, 5, 136);
+font-stretch: semi-expanded;
+color: rgb(88, 32, 153);
+font-style: bold;
+text-align: center;
+margin-top: 50px;
+}
+
+
+.logo {
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 5000%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topnav {
+        overflow: hidden;
+        font-size: 1.5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        padding: 20px;
+        margin: 10px;
+    
+        list-style-type:none ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }     
+
+.general {
+background-color: rgb(211, 242, 255);
+}
+
+ .grid-container {
+    display: grid;
+    column-gap: 25px
+    row-gap: 30px;
+    grid-template-columns: 100px 100px; 
+    grid-template-rows: 40px 100px; 
+    grid-template-columns: 3fr 2fr 1fr; 
+    grid-template-rows: 2fr 1fr; 
+   
+
+   
+}
+
+.grid-item1 {
+    background-image: url(../images/celtas.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+.grid-item2 {
+    background-image: url(../images/TRADICIONAL.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+.grid-item3 {
+    background-image: url(../images/NuevaEscuela.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+.grid-item4 {
+    background-image: url(../images/realismo.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+.grid-item5 {
+    background-image: url(../images/orientales.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+.grid-item6 {
+    background-image: url(../images/SURREALISMO.jpg);
+    margin: 100px;
+    padding: 100px;
+    border-style: ridge;
+    align-items: center;
+}
+
+
+.fotoperfil {
+    background-color: rgb(222, 194, 224);
+    font-size: 1.5rem;
+    font-palette: black;
+    height: 100px;  
+    width: 300px
+    margin: 10px;
+    padding: 20px;
+
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+.nombre {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.email {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+.cel {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+.password {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.artestudio {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+.nombreartista {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 330px;
+    display: inline-block;
+
+}
+
+.web {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 330px;
+    display: inline-block;
+
+
+}
+
+.localizacion {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 330px;
+    display: inline-block;
+
+
+}
+
+.estilo {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 330px;
+    display: inline-block;
+}
+
+.submit {
+    background-color: rgb(221, 190, 221);
+    font-size: 1.rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.reset {
+    background-color: rgb(221, 190, 221);
+    font-size: 1rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.footer {
+    background-position: center;
+    font-size: 2rem;
+    width: 220px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+
+}
+
+
+
+  @media screen and (max-width: 600px) 
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+
+    .topnav input {
+        display:block;
+        width: 100%;
+        }
+
+    .topnav div {
+            display:block;
+            width: 100%;
+            }
+
+
+
+
+
+.publicar {
+    background-color: rgb(131, 221, 149);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block;
+}
+
+.nombre1 {
+
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block;  
+}
+
+.mensaje {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 400px;
+    margin: 10px;
+    padding: 100px;
+    margin-left: 50px;
+    display: block   
+}
+
+.enviarmsj {
+    background-color: rgb(224, 146, 224);
+    font-size: 1.25rem;
+    font-palette: black;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block;
+    }
+
+.conectar {
+        background-color: rgb(21, 184, 212);
+        font-size: 1.25rem;
+        font-palette: black;
+        width: 250px;
+        margin: 10px;
+        padding: 20px;
+        margin-left: 50px;
+        display: block;
+        }
+
+.dejatuopinion {
+    background-color: rgb(226, 232, 233);
+    font-size: 1.25rem;
+    font-palette: rgb(5, 5, 5);
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block;
+    }
+
+.misartistas {
+    background-color: rgb(216, 239, 243);
+    font-size: 1.25rem;
+    font-palette: rgb(5, 5, 5);
+    width: 600px;
+    margin: 10px;
+    padding: 100px;
+    margin-left: 50px;
+    display: block;
+}
+
+.opiniones {
+    background-color: rgb(216, 239, 243);
+    font-size: 1.25rem;
+    font-palette: rgb(5, 5, 5);
+    width: 600px;
+    margin: 10px;
+    padding: 100px;
+    margin-left: 50px;
+    display: block;
+}
+
+.conexiones {
+    background-color: rgb(236, 241, 189);
+    font-size: 1.25rem;
+    font-palette: rgb(5, 5, 5);
+    width: 600px;
+    margin: 10px;
+    padding: 100px;
+    margin-left: 50px;
+    display: block;
+
+
+}
+
+
+.MiTablero {
+    background-color: rgb(242, 249, 250);
+    width: 1900px;
+    margin: 10px;
+    padding: 1000px;
+    display: block;
+
+    font-size: 2rem;
+    font-palette: black;
+    }
+
+.nombre2 {
+    background-color: rgb(248, 239, 248);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-top: 50PX;
+    margin-left: 50px;
+    display: block; 
+ }
+
+ .email2 {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block; 
+ }
+
+ .localizacion2 {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block; 
+ }
+
+ .estilo2 {
+    background-color: rgb(248, 247, 248);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block; 
+ }
+
+ .logoimagen {
+   background-color: rgb(172, 215, 243);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: block; 
+ }
+
+ .nombre3 {
+    background-color: rgb(172, 215, 243);
+     font-size: 1.25rem;
+      font-palette: black;
+      width: 250px;
+     margin: 10px;
+     padding: 20px;
+     margin-left: 50px;
+     display: block; 
+  }
+
+  .contacto {
+    background-color: rgb(172, 215, 243);
+     font-size: 1.25rem;
+      font-palette: black;
+      width: 250px;
+     margin: 10px;
+     padding: 20px;
+     margin-left: 50px;
+     display: block; 
+  }
+
+  .estilos {
+    background-color: rgb(172, 215, 243);
+     font-size: 1.25rem;
+      font-palette: black;
+      width: 250px;
+     margin: 10px;
+     padding: 20px;
+     margin-left: 50px;
+     display: block; 
+  }
+
+  .Opiniones {
+    background-color: rgb(172, 215, 243);
+     font-size: 1.25rem;
+      font-palette: black;
+      width: 250px;
+     margin: 10px;
+     padding: 20px;
+     margin-left: 50px;
+     display: block; 
+  }
+
+
+.iniciarchat {
+    font-size: 1.25rem;
+    font-palette: black;
+    background-color: #c5abe2;
+}
+
+.pregunta {
+    background-color: rgb(238, 200, 200);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 400px;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 30px;
+    display: block;
+}
+
+.respuesta {
+    background-color: rgb(200, 224, 238);
+    font-size: 1.25rem;
+     font-palette: black;
+     width: 700px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 200px;
+    display: block;
+
+}
