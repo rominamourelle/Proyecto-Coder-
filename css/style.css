@@ -21,13 +21,16 @@ margin-top: 50px;
     margin-right: auto;
 }
 
+
+
 .topnav {
         overflow: hidden;
+        background-color: #c5abe2;
         font-size: 1.5rem;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         padding: 20px;
         margin: 10px;
-    
+        color: #3e177ce7;
         list-style-type:none ;
         display: flex;
         flex-direction: row;
@@ -40,81 +43,100 @@ background-color: rgb(211, 242, 255);
 
  .grid-container {
     display: grid;
-    column-gap: 25px
-    row-gap: 30px;
-    grid-template-columns: 100px 100px; 
-    grid-template-rows: 40px 100px; 
-    grid-template-columns: 3fr 2fr 1fr; 
-    grid-template-rows: 2fr 1fr; 
-   
+    column-gap: 100px
+    row-gap: 100px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr)
+    justify-content: start;
 
-   
 }
+
 
 .grid-item1 {
     background-image: url(../images/celtas.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 .grid-item2 {
     background-image: url(../images/TRADICIONAL.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 .grid-item3 {
     background-image: url(../images/NuevaEscuela.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 .grid-item4 {
     background-image: url(../images/realismo.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 .grid-item5 {
     background-image: url(../images/orientales.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 .grid-item6 {
     background-image: url(../images/SURREALISMO.jpg);
-    margin: 100px;
-    padding: 100px;
+    background-position: center;
+    margin: 200px;
+    padding: 200px;
     border-style: ridge;
     align-items: center;
 }
 
 
+
+@media screen and (min-width: 468px) {
+    .body {
+            background-color: #000000;
+      }
+    }
+
+.formulario {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: no-wrap; 
+    justify-content: flex-start;
+}
+
+
 .fotoperfil {
+    order: 1;
     background-color: rgb(222, 194, 224);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-palette: black;
-    height: 100px;  
-    width: 300px
+    width: 250px;
     margin: 10px;
     padding: 20px;
-
     margin-left: 50px;
     display: inline-block;
 
 }
 
 .nombre {
+    order: 2;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
@@ -126,6 +148,7 @@ background-color: rgb(211, 242, 255);
 }
 
 .email {
+    order: 3;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
@@ -138,6 +161,7 @@ background-color: rgb(211, 242, 255);
 }
 
 .cel {
+    order: 4;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
@@ -150,6 +174,7 @@ background-color: rgb(211, 242, 255);
 }
 
 .password {
+    order: 5;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
@@ -160,7 +185,8 @@ background-color: rgb(211, 242, 255);
     display: inline-block;
 }
 
-.artestudio {
+.yesorno {
+    order: 7;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
@@ -173,67 +199,72 @@ background-color: rgb(211, 242, 255);
 }
 
 .nombreartista {
+    order: 8;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
-    width: 300px;
+    width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 330px;
+    margin-left: 100px;
     display: inline-block;
 
 }
 
 .web {
+    order: 9;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
-    width: 300px;
+    width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 330px;
+    margin-left: 100px;
     display: inline-block;
 
 
 }
 
 .localizacion {
+    order: 10;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
     font-palette: black;
-    width: 300px;
+    width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 330px;
+    margin-left: 100px;
     display: inline-block;
 
 
 }
 
 .estilo {
+    order: 11;
     background-color: rgb(248, 247, 248);
     font-size: 1.25rem;
-    font-palette: black;
-    width: 300px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 330px;
-    display: inline-block;
-}
-
-.submit {
-    background-color: rgb(221, 190, 221);
-    font-size: 1.rem;
     font-palette: black;
     width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 100px;
     display: inline-block;
 }
 
+.submit {
+    order: 12;
+    background-color: rgb(221, 190, 221);
+    font-size: 1.rem;
+    font-palette: black;
+     width: 250px;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    display: inline;
+}
+
 .reset {
+    order: 13;
     background-color: rgb(221, 190, 221);
     font-size: 1rem;
     font-palette: black;
@@ -242,28 +273,28 @@ background-color: rgb(211, 242, 255);
     padding: 20px;
     margin-left: 50px;
     margin-top: 50px;
-    display: inline-block;
+    display: inline;
 }
+
 
 .footer {
     background-position: center;
+    text-align: center;
     font-size: 2rem;
-    width: 220px;
+    width: auto;
     margin: auto;
-    padding: 10px;
+    padding: auto;
     display: block;
-
 }
 
 
-
-  @media screen and (max-width: 600px) 
   .topnav a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #3e177ce7;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; }
+    text-decoration: none; 
+}
 
     .topnav input {
         display:block;
@@ -274,9 +305,6 @@ background-color: rgb(211, 242, 255);
             display:block;
             width: 100%;
             }
-
-
-
 
 
 .publicar {
@@ -313,26 +341,39 @@ background-color: rgb(211, 242, 255);
     display: block   
 }
 
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "enviarmsj"
+      "conectar"
+      "publicar"
+      "conexiones"
+      "misartistas"
+      "opiniones"
+      "mitablero";
+    grid-template-rows: 6fr 5fr 4fr 3fr 2fr 1fr 900px; 
+    grid-template-columns: 2fr;
+ }
+ .border {
+    border: 1px solid black;
+ }
+   
+
+
+
 .enviarmsj {
+    grid-area: enviarmsj;
     background-color: rgb(224, 146, 224);
     font-size: 1.25rem;
     font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: block;
     }
 
 .conectar {
+    grid-area: conectar;
         background-color: rgb(21, 184, 212);
         font-size: 1.25rem;
-        font-palette: black;
-        width: 250px;
-        margin: 10px;
-        padding: 20px;
-        margin-left: 50px;
-        display: block;
+        font-palette: black;       
         }
 
 .dejatuopinion {
@@ -346,52 +387,37 @@ background-color: rgb(211, 242, 255);
     display: block;
     }
 
+.publicar {
+     grid-area: publicar;
+     background-color: rgb(216, 239, 243);
+     font-size: 1.25rem;
+      font-palette: rgb(5, 5, 5);    
+    }
+    
 .misartistas {
+    grid-area: misartistas;
     background-color: rgb(216, 239, 243);
     font-size: 1.25rem;
-    font-palette: rgb(5, 5, 5);
-    width: 600px;
-    margin: 10px;
-    padding: 100px;
-    margin-left: 50px;
-    display: block;
+    font-palette: rgb(5, 5, 5);  
 }
 
 .opiniones {
+    grid-area: opiniones;
     background-color: rgb(216, 239, 243);
     font-size: 1.25rem;
     font-palette: rgb(5, 5, 5);
-    width: 600px;
-    margin: 10px;
-    padding: 100px;
-    margin-left: 50px;
-    display: block;
-}
-
-.conexiones {
-    background-color: rgb(236, 241, 189);
-    font-size: 1.25rem;
-    font-palette: rgb(5, 5, 5);
-    width: 600px;
-    margin: 10px;
-    padding: 100px;
-    margin-left: 50px;
-    display: block;
-
-
-}
-
+    }
 
 .MiTablero {
-    background-color: rgb(242, 249, 250);
-    width: 1900px;
-    margin: 10px;
-    padding: 1000px;
-    display: block;
-
+    grid-area: mitablero;
+    background-color: rgb(196, 223, 147);
     font-size: 2rem;
     font-palette: black;
+    text-align: center;
     }
+
+
+
 
 .nombre2 {
     background-color: rgb(248, 239, 248);
