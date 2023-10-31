@@ -31,11 +31,11 @@ margin-top: 50px;
         padding: 20px;
         margin: 10px;
         color: #3e177ce7;
-        list-style-type:none ;
+        list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-    }     
+        }     
 
 .general {
 background-color: rgb(211, 242, 255);
