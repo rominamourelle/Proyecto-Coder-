@@ -1,7 +1,7 @@
 .inicio {
 font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 2rem;
-font-display: rgb(62, 5, 136);
+font-size: 2.5rem;
+font-display: rgb(194, 176, 218);
 font-stretch: semi-expanded;
 color: rgb(88, 32, 153);
 font-style: bold;
@@ -9,6 +9,10 @@ text-align: center;
 margin-top: 50px;
 }
 
+.general {
+background-color: rgba(174, 134, 196, 0.671);
+
+}
 
 .logo {
     background-image: url(../images/logo.jpg);
@@ -21,36 +25,29 @@ margin-top: 50px;
     margin-right: auto;
 }
 
-
-
 .topnav {
         overflow: hidden;
-        background-color: #c5abe2;
+        background-color: #edebe1;
         font-size: 1.5rem;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         padding: 20px;
         margin: 10px;
-        color: #3e177ce7;
+        border-bottom: 1px solid black;
         list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
         }     
 
-.general {
-background-color: rgb(211, 242, 255);
-}
-
  .grid-container {
     display: grid;
-    column-gap: 100px
-    row-gap: 100px;
+    column-gap: 50px
+    row-gap: 10px;
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(3, 1fr)
     justify-content: start;
 
 }
-
 
 .grid-item1 {
     background-image: url(../images/celtas.jpg);
@@ -58,7 +55,8 @@ background-color: rgb(211, 242, 255);
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    align-items: center;
+    align-items: stretch;
+
 }
 
 .grid-item2 {
@@ -67,7 +65,7 @@ background-color: rgb(211, 242, 255);
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    align-items: center;
+    align-items: stretch;
 }
 
 .grid-item3 {
@@ -76,7 +74,7 @@ background-color: rgb(211, 242, 255);
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    align-items: center;
+    align-items: stretch;
 }
 
 .grid-item4 {
@@ -85,8 +83,7 @@ background-color: rgb(211, 242, 255);
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    
-    align-items: center;
+    align-items: stretch;
 }
 
 .grid-item5 {
@@ -95,16 +92,16 @@ background-color: rgb(211, 242, 255);
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    align-items: center;
-}
+    align-items: stretch;
+    }
 
 .grid-item6 {
-    background-image: url(../images/SURREALISMO.jpg);
+    background-image: url(../images/surrealismo.jpg);
     background-position: center;
     margin: 200px;
     padding: 200px;
     border-style: ridge;
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -280,6 +277,8 @@ background-color: rgb(211, 242, 255);
 
 .footer {
     background-position: center;
+    border-top: 1px solid rgb(224, 216, 216);
+    background-color: rgb(162, 103, 238);
     text-align: center;
     font-size: 2rem;
     width: auto;
@@ -343,56 +342,84 @@ background-color: rgb(211, 242, 255);
 }
 
 
+
+
 #grilla {
     display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
     grid-template-areas:
-      "enviarmsj"
-      "conectar"
-      "publicar"
-      "conexiones"
-      "misartistas"
-      "opiniones"
-      "mitablero";
-    grid-template-rows: 6fr 5fr 4fr 3fr 2fr 1fr 900px; 
-    grid-template-columns: 2fr;
+    "formulario botones mitablero mitablero";
+    justify-content: start;
  }
- .border {
+ 
+.form {
+    grid-area: formulario;
+    background-color: rgb(244, 244, 244);
+    font-size: 1.25rem;
+    padding: 10px;
+    justify-self: stretch;  
+    order: 1;
+    }
+
+.botones {
+    grid-area: botones;
+    background-color: rgb(244, 244, 244);
+    order: 2;
+    justify-items: start;
+}
+
+.conex1 {
+    grid-area: formulario;
+    background-color: rgb(229, 108, 22);
+    padding: 30px;
+    font-size: 1.25rem;
+    margin: 20px;  
+}
+
+.conex {
+    grid-area: formulario;
+    grid-area: formulario;
+    background-color: rgb(212, 172, 142);
+    font-size: 1rem;
+    margin: 20px;
+    align-items: flex-start;
+}
+
+.mitablero {
+    grid-area: mitablero;
+    background-color: rgb(196, 223, 147);
+    font-size: 2rem;
+    padding: 450px;
     border: 1px solid black;
- }
-   
-
-
+    justify-self: stretch;
+    order: 3;
+    }
 
 .enviarmsj {
-    grid-area: enviarmsj;
-    background-color: rgb(224, 146, 224);
+    grid-area: botones;
+    background-color: rgb(229, 229, 157);
     font-size: 1.25rem;
-    font-palette: black;
-    }
+    font-palette: black; 
+    margin: 20px;
+    align-items: flex-start;
+}
 
 .conectar {
-    grid-area: conectar;
-        background-color: rgb(21, 184, 212);
+    grid-area: botones;
+    background-color: rgb(229, 229, 157);
         font-size: 1.25rem;
-        font-palette: black;       
+        font-palette: black; 
+        margin: 20px;
+        align-items: flex-start;      
         }
 
-.dejatuopinion {
-    background-color: rgb(226, 232, 233);
-    font-size: 1.25rem;
-    font-palette: rgb(5, 5, 5);
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: block;
-    }
-
-.publicar {
-     grid-area: publicar;
-     background-color: rgb(216, 239, 243);
+.publicar2 {
+     grid-area: botones;
+     background-color: rgb(229, 229, 157);
      font-size: 1.25rem;
-      font-palette: rgb(5, 5, 5);    
+      font-palette: rgb(5, 5, 5);  
+      margin: 20px;
+      align-items: flex-start;
     }
     
 .misartistas {
@@ -409,13 +436,7 @@ background-color: rgb(211, 242, 255);
     font-palette: rgb(5, 5, 5);
     }
 
-.MiTablero {
-    grid-area: mitablero;
-    background-color: rgb(196, 223, 147);
-    font-size: 2rem;
-    font-palette: black;
-    text-align: center;
-    }
+
 
 
 
