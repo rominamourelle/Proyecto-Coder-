@@ -1,4 +1,10 @@
-.inicio {
+.link:hover {
+    background-color: rgba(123, 130, 200, 0.671);
+    text-decoration: underline;
+}
+
+
+.inicio { 
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 2.5rem;
 font-display: rgb(194, 176, 218);
@@ -7,6 +13,7 @@ color: rgb(88, 32, 153);
 font-style: bold;
 text-align: center;
 margin-top: 50px;
+padding: 50px;
 }
 
 .general {
@@ -25,11 +32,12 @@ background-color: rgba(174, 134, 196, 0.671);
     margin-right: auto;
 }
 
+/*Inicio*/
 .topnav {
         overflow: hidden;
         background-color: #edebe1;
         font-size: 1.5rem;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding: 20px;
         margin: 10px;
         border-bottom: 1px solid black;
@@ -41,84 +49,101 @@ background-color: rgba(174, 134, 196, 0.671);
 
  .grid-container {
     display: grid;
-    column-gap: 50px
+    grid-template-areas: "celta tradicional nuevaescuela"
+                        "realismo orientales surrealismo";
+    column-gap: 50px;
     row-gap: 10px;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr); 
     justify-content: start;
-
+   
 }
 
 .grid-item1 {
     background-image: url(../images/celtas.jpg);
     background-position: center;
-    margin: 200px;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    margin: 50px;
     padding: 200px;
     border-style: ridge;
-    align-items: stretch;
+    
 
 }
 
 .grid-item2 {
     background-image: url(../images/TRADICIONAL.jpg);
     background-position: center;
-    margin: 200px;
-    padding: 200px;
     border-style: ridge;
-    align-items: stretch;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    padding: 200px;
+    margin: 50px;
 }
 
 .grid-item3 {
     background-image: url(../images/NuevaEscuela.jpg);
     background-position: center;
-    margin: 200px;
-    padding: 200px;
     border-style: ridge;
     align-items: stretch;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    margin: 50px;
+    padding: 200px;
 }
 
 .grid-item4 {
     background-image: url(../images/realismo.jpg);
     background-position: center;
-    margin: 200px;
-    padding: 200px;
     border-style: ridge;
     align-items: stretch;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    margin: 50px;
+    padding: 200px;
 }
 
 .grid-item5 {
     background-image: url(../images/orientales.jpg);
     background-position: center;
-    margin: 200px;
-    padding: 200px;
     border-style: ridge;
     align-items: stretch;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    margin: 50px;
+    padding: 200px;
     }
 
 .grid-item6 {
     background-image: url(../images/surrealismo.jpg);
     background-position: center;
-    margin: 200px;
-    padding: 200px;
     border-style: ridge;
     align-items: stretch;
+    width: 100px;
+    height: 90px;
+    margin-left: 50px;
+    margin: 50px;
+    padding: 200px;
 }
 
 
-
-@media screen and (min-width: 468px) {
-    .body {
-            background-color: #000000;
-      }
-    }
-
+/*Crear mi Cuenta*/
 .formulario {
+    background-color: rgb(245, 223, 179); 
+}
+
+.datos {
     display: flex;
     flex-direction: column; 
-    flex-wrap: no-wrap; 
-    justify-content: flex-start;
+    flex-wrap: wrap; 
+    justify-content: center;
+    font: black;
+    font-size: 2rem;  
 }
-
 
 .fotoperfil {
     order: 1;
@@ -126,135 +151,30 @@ background-color: rgba(174, 134, 196, 0.671);
     font-size: 1.25rem;
     font-palette: black;
     width: 250px;
+    height: 100px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
+    
     display: inline-block;
 
 }
 
-.nombre {
+.tarjetas {
     order: 2;
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(249, 229, 249);
     font-size: 1.25rem;
-    font-palette: black;
     width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
-    display: inline-block;
-}
-
-.email {
-    order: 3;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: inline-block;
-
-}
-
-.cel {
-    order: 4;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: inline-block;
-
-}
-
-.password {
-    order: 5;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: inline-block;
-}
-
-.yesorno {
-    order: 7;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: inline-block;
-
-}
-
-.nombreartista {
-    order: 8;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 100px;
-    display: inline-block;
-
-}
-
-.web {
-    order: 9;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 100px;
-    display: inline-block;
-
-
-}
-
-.localizacion {
-    order: 10;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 100px;
-    display: inline-block;
-
-
-}
-
-.estilo {
-    order: 11;
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 100px;
+    
     display: inline-block;
 }
 
 .submit {
     order: 12;
     background-color: rgb(221, 190, 221);
-    font-size: 1.rem;
-    font-palette: black;
-     width: 250px;
+    font-size: 1rem;
+    width: 250px;
     margin: 10px;
     padding: 20px;
     margin-left: 50px;
@@ -265,7 +185,6 @@ background-color: rgba(174, 134, 196, 0.671);
     order: 13;
     background-color: rgb(221, 190, 221);
     font-size: 1rem;
-    font-palette: black;
     width: 250px;
     margin: 10px;
     padding: 20px;
@@ -306,83 +225,59 @@ background-color: rgba(174, 134, 196, 0.671);
             width: 100%;
             }
 
-
-.publicar {
-    background-color: rgb(131, 221, 149);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: block;
-}
-
-.nombre1 {
-
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 250px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 50px;
-    display: block;  
-}
-
-.mensaje {
-    background-color: rgb(248, 247, 248);
-    font-size: 1.25rem;
-    font-palette: black;
-    width: 400px;
-    margin: 10px;
-    padding: 100px;
-    margin-left: 50px;
-    display: block   
-}
-
-
-
-
+/*Mi Perfil*/
 #grilla {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-template-areas:
     "formulario botones mitablero mitablero";
     justify-content: start;
+    margin: 20px;
  }
  
 .form {
     grid-area: formulario;
     background-color: rgb(244, 244, 244);
     font-size: 1.25rem;
-    padding: 10px;
+    padding: 20px;
     justify-self: stretch;  
     order: 1;
+    }
+
+#grillabotones {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas:"enviarmsj publicar2 conectar";
     }
 
 .botones {
     grid-area: botones;
     background-color: rgb(244, 244, 244);
     order: 2;
-    justify-items: start;
+    padding: 20px;
 }
 
 .conex1 {
     grid-area: formulario;
-    background-color: rgb(229, 108, 22);
+    background-color: rgb(161, 131, 176);
     padding: 30px;
     font-size: 1.25rem;
     margin: 20px;  
+    width:350px;
+    
 }
 
 .conex {
     grid-area: formulario;
     grid-area: formulario;
-    background-color: rgb(212, 172, 142);
+    background-color: rgb(188, 213, 172);
     font-size: 1rem;
     margin: 20px;
-    align-items: flex-start;
+    display: flexbox;
+    flex-wrap: nowrap;
+    flex-direction:initial;
+    width: 300px;
+    height: 150px;
 }
 
 .mitablero {
@@ -395,31 +290,39 @@ background-color: rgba(174, 134, 196, 0.671);
     order: 3;
     }
 
+@media(max-widht: 480px) {
+    .mitablero {
+        background-color: rgb(112, 126, 154);
+                }
+
+}
+
 .enviarmsj {
     grid-area: botones;
-    background-color: rgb(229, 229, 157);
+    background-color: rgb(127, 216, 175);
     font-size: 1.25rem;
-    font-palette: black; 
     margin: 20px;
-    align-items: flex-start;
+    height: 150px; 
+    
 }
 
 .conectar {
     grid-area: botones;
-    background-color: rgb(229, 229, 157);
-        font-size: 1.25rem;
-        font-palette: black; 
+    background-color: rgb(127, 216, 175);
+        font-size: 1.25rem; 
         margin: 20px;
-        align-items: flex-start;      
+        width: 200150px;
+        height: 150px; 
+    width: 150px;
         }
 
 .publicar2 {
      grid-area: botones;
-     background-color: rgb(229, 229, 157);
+     background-color: rgb(127, 216, 175);
      font-size: 1.25rem;
-      font-palette: rgb(5, 5, 5);  
       margin: 20px;
-      align-items: flex-start;
+      width: 150px;
+      height: 150px;
     }
     
 .misartistas {
@@ -429,60 +332,82 @@ background-color: rgba(174, 134, 196, 0.671);
     font-palette: rgb(5, 5, 5);  
 }
 
-.opiniones {
-    grid-area: opiniones;
-    background-color: rgb(216, 239, 243);
-    font-size: 1.25rem;
-    font-palette: rgb(5, 5, 5);
+/*Buscador de Artistas*/
+.fondo {
+    background-image: url(../images/logo\ -\ copia.jpg);
+    background-size: 5%; 
+}
+
+#grilla1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "busqueda resultado resultado2";
+    justify-content: start;
     }
 
+.buscador {
+background-color: #f5d9d9;
+margin-top: 100px;
+margin-bottom: 100px;
 
+}
 
+.fotos {
+    background-color: #f5d9d9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
+.cuadros {
+   margin: 10px;
+   display: block;
+   border-color: #000000;
 
+}
 
 .nombre2 {
-    background-color: rgb(248, 239, 248);
+    background-color: rgba(241, 228, 218);
     font-size: 1.25rem;
-     font-palette: black;
-     width: 250px;
+    font: black;
+    width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-top: 50PX;
-    margin-left: 50px;
+    margin-left: 100px;
     display: block; 
  }
 
  .email2 {
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(241, 228, 218);
     font-size: 1.25rem;
      font-palette: black;
      width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
     display: block; 
  }
 
  .localizacion2 {
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(241, 228, 218);
     font-size: 1.25rem;
      font-palette: black;
      width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
     display: block; 
  }
 
  .estilo2 {
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(241, 228, 218);
     font-size: 1.25rem;
      font-palette: black;
      width: 250px;
     margin: 10px;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
     display: block; 
  }
 
@@ -490,10 +415,10 @@ background-color: rgba(174, 134, 196, 0.671);
    background-color: rgb(172, 215, 243);
     font-size: 1.25rem;
      font-palette: black;
-     width: 250px;
+    width: 150px;
     margin: 10px;
+    height: 150px;
     padding: 20px;
-    margin-left: 50px;
     display: block; 
  }
 
@@ -502,10 +427,9 @@ background-color: rgba(174, 134, 196, 0.671);
      font-size: 1.25rem;
       font-palette: black;
       width: 250px;
-     margin: 10px;
      padding: 20px;
-     margin-left: 50px;
      display: block; 
+     margin: 10px;
   }
 
   .contacto {
@@ -513,10 +437,9 @@ background-color: rgba(174, 134, 196, 0.671);
      font-size: 1.25rem;
       font-palette: black;
       width: 250px;
-     margin: 10px;
      padding: 20px;
-     margin-left: 50px;
      display: block; 
+     margin: 10px;
   }
 
   .estilos {
@@ -524,10 +447,9 @@ background-color: rgba(174, 134, 196, 0.671);
      font-size: 1.25rem;
       font-palette: black;
       width: 250px;
-     margin: 10px;
      padding: 20px;
-     margin-left: 50px;
      display: block; 
+     margin: 10px;
   }
 
   .Opiniones {
@@ -535,39 +457,58 @@ background-color: rgba(174, 134, 196, 0.671);
      font-size: 1.25rem;
       font-palette: black;
       width: 250px;
-     margin: 10px;
      padding: 20px;
-     margin-left: 50px;
      display: block; 
+     margin: 10px;
   }
 
+/*Chat*/
+
+.chat {
+    background-color: rgb(206, 249, 233);
+
+}
 
 .iniciarchat {
-    font-size: 1.25rem;
-    font-palette: black;
-    background-color: #c5abe2;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(244, 211, 149);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin: 50px;
+    margin-left: 350px;
+    display: inline-block;
 }
 
-.pregunta {
-    background-color: rgb(238, 200, 200);
-    font-size: 1.25rem;
-     font-palette: black;
-     width: 400px;
-    margin: 10px;
+.usuario {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(244, 211, 149);
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    padding: 50px;
+    margin: 50px;
+    display: inline-block;
+}
+
+.conversaciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
     padding: 10px;
-    margin-left: 200px;
-    margin-top: 30px;
-    display: block;
+    margin: 10px;
+    border: #000000;
 }
 
-.respuesta {
-    background-color: rgb(200, 224, 238);
-    font-size: 1.25rem;
-     font-palette: black;
-     width: 700px;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 200px;
-    display: block;
-
+a:hover { /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+    font-weight: bold;
+    padding:20px;
+    background-color: rgb(10, 10, 60);
+    color: azure;
 }

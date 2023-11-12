@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg">
     <link rel="stylesheet" href="../css/style.css">
    
         
@@ -14,29 +14,33 @@
 <body>
         <header>
         <NAV class="topnav"> 
-                <a href="../index.html">Inicio</a>   
-                <a href="./miperfil.html">Mi Perfil</a>        
-                <a href="./chat.html">Chat</a>     
-                <a href="./buscador-artistas-studios.html">Buscador de Artistas-Studios</a>
+                <a class="link" href="../index.html">Inicio</a>   
+                <a class="link" href="./miperfil.html">Mi Perfil</a>        
+                <a class="link" href="./chat.html">Chat</a>     
+                <a class="link" href="./buscador-artistas-studios.html">Buscador de Artistas-Studios</a>
         </NAV>
         </header>
 
 
-    <section class="formulario" class="body">
-
-   
+    <section class="formulario">
+        <div class="datos">
         <input type="image" placeholder="Foto del Perfil" id="foto" class="fotoperfil">               
-        <input type="tex" placeholder="Nombre Completo" required id="Nombre" class="nombre">  
-        <input type="email" placeholder="E-mail" required id="Email" class="email">   
-        <input type="number" placeholder="Celular/Telefono" id="Cel" class="cel">       
-        <input type="password" placeholder="Crear Contraseña" required id="contraseña" class="password"> 
-        <input type="text" placeholder="Soy Artista o Studio" class="yesorno" id="Si"> 
-        <input type="text" placeholder="No Soy Artista o Studio" class="yesorno" id="No"> 
-        <input type="text" placeholder="Nombre del Artista/Studio" required id="nombre artista" class="nombreartista"> 
-        <input type="url" placeholder="Pagina Web" id="web" class="web">
-        <Input type="text" placeholder="Localizacion" id="Localizacion" class="localizacion">
-        <Input type="text" placeholder="Estilo" id="Estilo" class="estilo">
+        <input type="tex" placeholder="Nombre Completo" required id="Nombre" class="tarjetas">  
+        <input type="email" placeholder="E-mail" required id="Email" class="tarjetas">   
+        <input type="number" placeholder="Celular/Telefono" id="Cel" class="tarjetas">       
+        <input type="password" placeholder="Crear Contraseña" required id="contraseña" class="tarjetas"> 
+        </div>
+        <div>
+        <input type="text" placeholder="Soy Artista o Studio" class="tarjetas" id="Si"> 
+        <input type="text" placeholder="No Soy Artista o Studio" class="tarjetas" id="No"> 
+        </div>
+        <div>
+        <input type="text" placeholder="Nombre del Artista/Studio" required id="nombre artista" class="tarjetas"> 
+        <input type="url" placeholder="Pagina Web" id="web" class="tarjetas">
+        <Input type="text" placeholder="Localizacion" id="Localizacion" class="tarjetas">
+        <Input type="text" placeholder="Estilo" id="Estilo" class="tarjetas">
                <!--CREAR UNA LISTA DESPLEGABLE CON LOS ESTILOS POSIBLES EN LA PAGINA-->
+        </div>
         <input type="submit" value="Enviar" class="submit">
         <input type="reset" value="Reset" class="reset">
         
@@ -59,7 +63,6 @@
         <footer>
             <a class="footer" href="./FAQ.html">FAQ</a>
         </footer>
-
 
 
 </body>
